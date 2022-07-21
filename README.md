@@ -1,4 +1,4 @@
-The python file named page_time_report.py is a script that aggregates web traffic data (in csv files) which include information such as the pages visited and the length of time spent on each page for different users. It outputs a single csv file that contains unique user ids and the length of time each spent on each web page. Read the doc string in the script for more info
+##### The python file named page_time_report.py is a script that aggregates web traffic data (in csv files) which include information such as the pages visited and the length of time spent on each page for different users. It outputs a single csv file that contains unique user ids and the length of time each spent on each web page. Read the doc string in the script for more info
 Running the script
 
     Download the file into the directory of your choice and copy the path of the directory
