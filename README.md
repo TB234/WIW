@@ -45,5 +45,5 @@ page_time_per_user(in_root_url, in_filenames, out_file_path)
 
 The function prints out the following statement after the program runs successfully:
 
- > Access output file: user_page_time.csv at  /home/tb23unix/aws/
+ > Access output file: user_page_time.csv at  /home/tbunix/wiw/
 
