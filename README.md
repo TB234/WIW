@@ -21,7 +21,7 @@
                 
 The function returns a csv file named _user_page_time.csv_ that is stored in the _out_file_path_
 
-Example:
+Example: Copy and run the code below. Remember to add the module's directory to sys.path and use a valid _out_file_path
 
 ~~~
 # imports function from module. Ensure module's directory is added to sys.path to prevent a module error
