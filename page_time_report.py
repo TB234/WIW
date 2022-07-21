@@ -11,10 +11,10 @@ def page_time_per_user(in_root_url, in_filenames, out_file_path):
         
     Parameters
     in_root_url : str
-               the public root url of the stored traffic data
+               the public root url of the stored web traffic data
     
     in_filenames: list
-              csv files of traffic data stored in a list e.g
+              csv files of web traffic data stored in a list e.g
               ['a.csv', 'b.csv', 'c.csv']         
 
     out_file_path: str
@@ -62,8 +62,11 @@ def page_time_per_user(in_root_url, in_filenames, out_file_path):
         df_user = df_user.merge(user_len, 'left', on = 'user_id')
         
     #replacing null values with zero
-    df_user.sort_values('user_id').fillna(0, inplace = True)
-    
+    df_user.fillna(0, inplace = True)
+
+    #sorting dataframe by user_id
+    df_user.sort_values('user_id',inplace = True)
+
     #output result into specified directory
     df_user.to_csv(out_file_path + 'user_page_time.csv', index = False)
 
