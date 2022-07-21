@@ -64,8 +64,7 @@ def page_time_per_user(in_root_url, in_filenames, out_file_path):
     #replacing null values with zero
     df_user.sort_values('user_id').fillna(0, inplace = True)
     
-    
-    
     #output result into specified directory
     df_user.to_csv(out_file_path + 'user_page_time.csv', index = False)
 
+    return print('Access output file: user_page_time.csv at ', out_file_path )
